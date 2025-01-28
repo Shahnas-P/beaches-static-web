@@ -13,7 +13,7 @@ const Navbar = () => {
     setLogo(!logo)
   }
   return (
-    <div className='flex justify-between px-6 items-center h-20 '>
+    <div className='flex w-full justify-between px-6 items-center h-20 absolute z-10 text-white '>
       <div><h1
       className={logo? `hidden`:`block`}
        >BEACHES.</h1></div>
@@ -30,12 +30,12 @@ const Navbar = () => {
       </div>
       <div className='flex md:hidden z-10' onClick={handleToggle} >
         {
-          toggle ? <AiOutlineClose size={20} /> :<HiOutlineMenuAlt4 size={20}/>
+          toggle ? <AiOutlineClose className='text-black' size={20} /> :<HiOutlineMenuAlt4  size={20}/>
         }
        
       </div>
       {/* Mobile view drop down */}
-      <div onClick={handleToggle} className={toggle ? `absolute left-0 top-0  w-full md:hidden   bg-gray-100/90 px-1 py-7 flex flex-col ` : `absolute left-[-100%] md:hidden `}>
+      <div onClick={handleToggle} className={toggle ? `absolute left-0 top-0  w-full md:hidden text-black  bg-gray-100/90 px-1 py-7 flex flex-col ` : `absolute left-[-100%] md:hidden `}>
         <h1>BEACHES.</h1> 
         <ul> 
         <li  className='border-b mx-3' >Home</li>
