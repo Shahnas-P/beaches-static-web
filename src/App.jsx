@@ -2,6 +2,7 @@
 import './App.css'
 import Carousel from './components/carousel'
 import Destinations from './components/Destinations'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Search from './components/Search'
@@ -16,6 +17,7 @@ function App() {
     <Search/>
     <Selects/>
 <Carousel/>
+<Footer/>
     </>
   )
 }
