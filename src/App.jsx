@@ -1,5 +1,6 @@
 
 import './App.css'
+import Carousel from './components/carousel'
 import Destinations from './components/Destinations'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -14,7 +15,7 @@ function App() {
     <Destinations/>
     <Search/>
     <Selects/>
-
+<Carousel/>
     </>
   )
 }
